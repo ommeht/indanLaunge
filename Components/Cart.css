@@ -1,0 +1,143 @@
+/* Main cart container */
+.cart {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background for the whole cart */
+    border-radius: 10px;       /* Rounded corners for the cart container */
+  }
+  
+  /* Title styling */
+  .cart h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Message for empty cart */
+  .cart p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Cart item container - to wrap each cart item in a box */
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ddd; /* Border around each cart item */
+    margin-bottom: 20px;      /* Margin between items */
+    background-color: white; /* White background for each item */
+    border-radius: 8px;      /* Rounded corners for items */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  }
+  
+  /* Image container */
+  .image-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px; /* Rounded image corners */
+  }
+  
+  /* Cart item info */
+  .cart-item p {
+    margin: 5px 0;
+  }
+  
+  .cart-item p strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Price styling */
+  .cart-item .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Quantity controls */
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .quantity-controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px; /* Increased padding for larger buttons */
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px; /* Rounded buttons */
+    transition: background-color 0.3s;
+  }
+  
+  .quantity-controls button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Total price container */
+  .cart-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; /* Increased margin for better spacing */
+    font-size: 1.4rem;
+  }
+  
+  .cart-total h3 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Order Now button styling */
+  .order-now-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 25px; /* Larger padding for better touchability */
+    cursor: pointer;
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .order-now-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .image-container {
+      margin-bottom: 15px;
+    }
+  
+    .quantity-controls {
+      margin-top: 10px;
+    }
+  
+    .order-now-button {
+      width: auto;
+      margin: 10px 0;
+    }
+  }
+  
